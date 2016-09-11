@@ -1,0 +1,18 @@
+snippet Chain
+	Chain(block = ${1:Block}, length = ${2:10})
+
+snippet List
+	List(block = ${1:Block}, length = ${2:10})
+
+snippet BlockDefinition
+	+${1:Block}(${2:attribute = 3x3}){
+		Input -> Identity -> Output
+	}
+
+snippet Block
+	/${1:blockName}{
+		in:In
+		out:Out
+
+		in -> out
+	}
